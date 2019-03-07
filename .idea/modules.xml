@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/tccpython.iml" filepath="$PROJECT_DIR$/.idea/tccpython.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/tccmurilorobert.iml" filepath="$PROJECT_DIR$/.idea/tccmurilorobert.iml" />
+>>>>>>> 92d9408ea0ba4d77f894f6e07f3e896953521748
     </modules>
   </component>
 </project>
