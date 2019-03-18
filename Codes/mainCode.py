@@ -1,7 +1,7 @@
 import speech_recognition as sr
 from time import sleep as wait
 
-print(sr.Microphone.list_microphone_names())
+#print(sr.Microphone.list_microphone_names())
 
 
 r = sr.Recognizer()
