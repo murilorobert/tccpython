@@ -1,3 +1,8 @@
-o objetivo principal é criar uma ferramenta que converta audio em texto,independente de como seja feita a entrada ,seja ela pr fala ou arquivo
+objetivo geral
 
+O intuito deste trabalho ,de forma geral, é a criação de uma ferramenta que faça a converção
+de audio em texto , indepndente da forma que seja feita a entrada seja ela por arquivo ou fala.
 
+Objetivo especifico
+
+*Utilizar 
