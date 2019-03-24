@@ -1,8 +1,10 @@
-objetivo geral
+Ojetivo geral
 
 O intuito deste trabalho ,de forma geral, é a criação de uma ferramenta que faça a converção
 de audio em texto , indepndente da forma que seja feita a entrada seja ela por arquivo ou fala.
 
 Objetivo especifico
 
-*Utilizar 
+Dentre os objetivos destacamos:
+
+*estudar ao formas de converção de audio em texto
