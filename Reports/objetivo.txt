@@ -1,10 +1,13 @@
 Ojetivo geral
 
-O intuito deste trabalho ,de forma geral, é a criação de uma ferramenta que faça a converção
-de audio em texto , indepndente da forma que seja feita a entrada seja ela por arquivo ou fala.
+O intuito deste trabalho ,de forma geral, é o estudo do desenvolvimento de software em Python
+atraves da criação de uma ferramenta que faça a converção de audio em texto ,
+independente da forma que seja feita a entrada seja ela por arquivo ou fala.
 
 Objetivo especifico
 
 Dentre os objetivos destacamos:
 
-*estudar ao formas de converção de audio em texto
+*estudar ao formas de converção de audio em texto;
+*estudar as caractericticas e o funcionalidades da biblioteca Speech Recognition;
+*Desenvolver a ferramenta utilizando a linguagem Python.
