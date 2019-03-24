@@ -1,0 +1,3 @@
+o objetivo principal é criar uma ferramenta que converta audio em texto,independente de como seja feita a entrada ,seja ela pr fala ou arquivo
+
+
