@@ -7,4 +7,6 @@ Objetivo especifico
 
 Dentre os objetivos destacamos:
 
-*estudar ao formas de converção de audio em texto
+*estudar ao formas de converção de audio em texto;
+*estudar as caractericticas e o funcionalidades da biblioteca Speech Recognition;
+*Desenvolver a ferramenta utilizando a linguagem Python.
