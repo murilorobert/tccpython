@@ -1,4 +1,4 @@
-	Se existe algo mais fundamental do que a escrita não sabemos, mas o que realmente temos ciência é que desde os primórdios esse é o meio indispensável de registro de informações,
+﻿	Se existe algo mais fundamental do que a escrita não sabemos, mas o que realmente temos ciência é que desde os primórdios esse é o meio indispensável de registro de informações,
 comunicação, experiências, tratados e etc. A escrita nos agrega valores inafiançáveis, seja por meio da história e paradigmas de pessoas intelectuais que já partiram do plano terrestre,
 mas que deixaram legados que vêm auxiliando até o tempo contemporâneo.
 	Sabendo disso a computação vem nos acompanhando pareamente cobrindo as necessidades da sociedade cada vez mais carentes desde seu processo de evolução, consequentemente a
@@ -7,4 +7,4 @@ soluções de problemas e até mesmo mais conforto e praticidade no cotidiano. H
 deixando de ser novidade.
 	Ferramentas e recursos a todo momento são desenvolvidas e disparadas para descomplicar a vida da sociedade, focado nesse paradigma o processo de busca por um novo recurso foi pensado
 e conseguimos trabalhar encima das necessidades de caráter social, com um recurso primordial e fundamental, ou seja, o registro de informações de modo refinado do audível para transcrição,
-por esse motivo confecionamos o software responsável pela conversão de arquivos de áudio e de fala direta através de um microfone para texto. 
+por esse motivo confecionamos o software responsável pela conversão de arquivos de áudio e de captura direta através de um microfone para formato textual.
