@@ -3,3 +3,17 @@ ja que este trabalho possui uma parte pratica e uma teorica , a metodologia tamb
 Primeiro faremos o estudo na area de converçao de texto em audio,pra descobrir quais ferramentas  bibliotecas sao utilizadas 
 para essa converção.
 No desenvolvimento irremos utilizar o PyCharm e a linguagem Python.
+
+Speech Recognition
+
+Utilizaremos a biblioteca Speech Recognition para a coverção da fala em texto.
+
+CMUSphinx
+
+CMUSphinx é um conjuto d ferramentas dedicadas a compreenção da voz.Ele é composto essencialmente por quatro ferramentas
+O pocketsphinx que é a bliblioteca de reconhecimento de voz; O Sphinxtrain responsavel pelo treino do modlo acustico;
+A Sphinxbase é uma biblioteca de suporte para as demais;e por fim a Sphinx4 que é uma biblioteca de reconhecimento de voz 
+que pode ser modificada,com seu funcionamentoo voltado para aplicaçoes desktop.No CMUSphinx existem varios modelos de linguagem e
+ainda permite a criação de novos caso seja necessario.
+
+
