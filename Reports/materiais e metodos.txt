@@ -8,7 +8,7 @@ para essa converção.
 Python
 
 
-Utilizaremos para a criação desta ferramenta a linguagem de programação Python,que nos proporciona 
+Utilizaremos para a criação desta ferramenta a linguagem de programação Python,que nos proporciona uma grande variedade de bibliotecas pra a manipulação e compreenção de audio.
 
 
 CMUSphinx
@@ -18,4 +18,5 @@ O Pocketsphinx que é a bliblioteca de reconhecimento de voz; O Sphinxtrain respo
 A Sphinxbase é uma biblioteca de suporte para as demais;e por fim a Sphinx4 que é uma biblioteca de reconhecimento de voz 
 que pode ser modificada,com seu funcionamento voltado para aplicaçoes desktop.No CMUSphinx existem varios modelos de linguagem e
 ainda permite a criação de novos caso seja necessario.
-Na criação de nossa ferramenta utilizaremos o Pocketsphinx e a Sphinxbase 
+Nesta ferramenta utilizaremos o Pocketsphinx e a Sphinxbase para a interpretação e manipulação do audio.
+
