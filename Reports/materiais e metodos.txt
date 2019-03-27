@@ -8,7 +8,7 @@ para essa converção.
 Python
 
 
-Utilizaremos para a criação desta ferramenta a linguagem de programação Python,que 
+Utilizaremos para a criação desta ferramenta a linguagem de programação Python,que nos proporciona 
 
 
 CMUSphinx
