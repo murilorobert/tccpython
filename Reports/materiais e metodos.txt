@@ -5,6 +5,11 @@ de reconhecimento,seja de texto,imagem ou audio,por ser uma linguagem de facil m
 Python possui uma grande variedade de bibliotecas pra a manipulação e compreenção de audio,nesta ferramenta serão utilizadas as bibliotecas 
 Tkinter, o CMUSphinx.
 
+Tkinter
+
+Tkinter é uma biblioteca nativa do Python que sera utilizada para a criação de interface grafica desta ferramenta.
+
+
 
 CMUSphinx
 
@@ -15,7 +20,4 @@ que pode ser modificada,com seu funcionamento voltado para aplicaçoes desktop.No
 ainda permite a criação de novos caso seja necessario.
 Nesta ferramenta utilizaremos o Pocketsphinx e a Sphinxbase para a interpretação e manipulação do audio.
 
-Tkinter
-
-Tkinter é uma biblioteca nativa do Python que sera utilizada para a criação de interface grafica desta ferramenta.
 
