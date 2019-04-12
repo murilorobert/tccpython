@@ -12,3 +12,8 @@ Dentre os objetivos destacamos:
 *estudar as caractericticas e o funcionalidades da biblioteca Speech Recognition;
 *estudar as caractericticas e o funcionalidades do CMUSphinx;
 *Desenvolver a ferramenta utilizando a linguagem Python.
+
+
+O que voces vao usar no trabalho, exemplos -> ferramentas usadas? Descreva-as 
+Python - Materiais ferramentas o Pyhon uma API, os métodos seria como voce vai faer isso.
+

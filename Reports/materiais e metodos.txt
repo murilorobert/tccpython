@@ -1,0 +1,23 @@
+Python
+
+Utilizaremos para a criação desta ferramenta a linguagem de programação Python,ja que é uma linguagem amplamente utilizada em aplicações
+de reconhecimento,seja de texto,imagem ou audio,por ser uma linguagem de facil manipulação e escrita.
+Python possui uma grande variedade de bibliotecas pra a manipulação e compreenção de audio,nesta ferramenta serão utilizadas as bibliotecas 
+Tkinter, o CMUSphinx.
+
+Tkinter
+
+Tkinter é uma biblioteca nativa do Python que sera utilizada para a criação de interface grafica desta ferramenta.
+
+
+
+CMUSphinx
+
+CMUSphinx é um conjuto d ferramentas dedicadas a compreenção da voz.Ele é composto essencialmente por quatro ferramentas
+O Pocketsphinx que é a bliblioteca de reconhecimento de voz; O Sphinxtrain responsavel pelo treino do modlo acustico;
+A Sphinxbase é uma biblioteca de suporte para as demais;e por fim a Sphinx4 que é uma biblioteca de reconhecimento de voz 
+que pode ser modificada,com seu funcionamento voltado para aplicaçoes desktop.No CMUSphinx existem varios modelos de linguagem e
+ainda permite a criação de novos caso seja necessario.
+Nesta ferramenta utilizaremos o Pocketsphinx e a Sphinxbase para a interpretação e manipulação do audio.
+
+
