@@ -1,0 +1,14 @@
+Cap 3 -  Planejamento dividir tarefas , cronograma orientações no desenvolvimento .
+Cap 4 - 
+
+Deve explicar figuras, diagramas, tabelas brevemente.
+Pensar nos relacionamentos entre tabaelas, precisar minhas váriaveis funconais e principais do software que façam que ele funcione, quais são e quantas e o que elas fazem?... o tipo de cada uma se é string inteiro etc..
+- Uma tela do protótipo, ou codigo fonte caso nao tenha desenvolvido ainda.
+Está de segunda quarta, quinta e sexta.
+-Conclusão , analisar criticamente onde voce conseguiu enxergar evolucao, o que ajudou o que atraphalhou, e se a documentação auxilou no processo  do desenvolvimento do trabalho, resultados mediantes a comparação do 
+uso da engenharia de requisitos.
+
+Criar sumário, lista de figuras ou tabelas. FIguras numeradas e com legenda
+Buscar incluir mais citações diretas.
+Não esquecer número de páginas.
+
