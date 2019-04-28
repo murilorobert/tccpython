@@ -12,7 +12,7 @@ with sr.Microphone() as source:
     audio = r.listen(source)
     try:
         text = r.recognize_google(audio, language='pt-BR')
-        print('\033[2;30mCalma aí vou anotar o que você me falou, preciso aprender mais sobre humanos rs =D \033[m')
+        print('\033[33mCalma aí vou anotar o que você me falou, preciso aprender mais sobre humanos rs =D \033[m')
         wait(5)
         print('\033[4;32mEu te entendi, legal! Parece que você quis me dizer, {}?\033[m'.format(text))
     except sr.UnknownValueError:
