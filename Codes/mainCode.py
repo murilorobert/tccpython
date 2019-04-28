@@ -1,5 +1,7 @@
+import os
 import speech_recognition as sr
 from time import sleep as wait
+os.system('cls' if os.name == 'nt' else 'clear') 
 
 #print(sr.Microphone.list_microphone_names())
 
