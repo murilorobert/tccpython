@@ -16,6 +16,9 @@ with sr.Microphone() as source:
         text = r.recognize_google(audio, language='pt-BR')
         print('\033[33mCalma aí vou anotar o que você me falou, preciso aprender mais sobre humanos rs =D \033[m')
         wait(5)
-        print('\033[4;32mEu te entendi, legal! Parece que você quis me dizer, {}?\033[m'.format(text))
+        arquivo = open('/home/robertdccaetano/Documentos/arquivo.txt', 'w')
+        print('\033[4;32mEu te entendi, legal! Parece que você quis me dizer, {}?\033[m'.format(text), arquivo.write(text))
+        arquivo.close()
+        
     except sr.UnknownValueError:
         print('\033[31mNão te entendi me desculpe, execute-me novamente!')
