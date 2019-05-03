@@ -3,14 +3,14 @@ import speech_recognition as spch
 from time import sleep as wait
 
 os.system('cls' if os.name == 'nt' else 'clear') 
-#print(spch.Microphone.list_microphone_names()) --
+print(spch.Microphone.list_microphone_names())
 resp = 's'
 while(resp == 's'):
     r = spch.Recognizer()
-    with spch.Microphone() as source:
-        r.adjust_for_ambient_noise(source)
+    with spch.Microphone() as mic:
+        r.adjust_for_ambient_noise(mic)
         print('\033[35mOlá! Eu sou seu computador, vamos lá diga alguma coisa para nós conversarmos... \033[m')
-        audio = r.listen(source)
+        audio = r.listen(mic)
         try:
             text = r.recognize_google(audio, language='pt-BR')
             print('\033[33mCalma aí vou anotar o que você me falou, primeiro me informe onde quer salvar seu arquivo... \033[m')
