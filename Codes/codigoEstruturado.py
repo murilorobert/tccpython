@@ -1,10 +1,20 @@
 import os
 import speech_recognition as spch
+from gtts import gTTS
+import playsound
 from time import sleep as wait
+#print(spch.Microphone.list_microphone_names())
 
 os.system('cls' if os.name == 'nt' else 'clear') 
-print(spch.Microphone.list_microphone_names())
 resp = 's'
+#Função responsável por criar o arquivo de áudio e executá-lo
+def cria_audio (audio):
+    tts = gTTS(audio, lang='pt-br')
+    #Salva o file de audio
+    tts.save('/home/robertdccaetano/Música/local/captura.mp3')
+    #Executa o file de audio
+    playsound.playsound('/home/robertdccaetano/Música/local/captura.mp3')
+
 while(resp == 's'):
     r = spch.Recognizer()
     with spch.Microphone() as mic:
@@ -21,6 +31,7 @@ while(resp == 's'):
                 arquivo.write(text)
                 print('\033[4;32mEu te entendi, legal! Parece que você quis me dizer, {}?\033[m'.format(text))       
                 arquivo.close()
+                cria_audio(text)                
                 resp = 'n'
             except FileNotFoundError:
                 print('Caminho incorreto')
