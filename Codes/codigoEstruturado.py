@@ -1,7 +1,7 @@
 import os
 import speech_recognition as spch
 from gtts import gTTS
-import playsound
+import playsound as play
 from time import sleep as wait
 #print(spch.Microphone.list_microphone_names())
 
