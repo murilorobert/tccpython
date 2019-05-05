@@ -1,19 +1,21 @@
 import os
 import speech_recognition as spch
+import pygame
 from gtts import gTTS
-import playsound as play
 from time import sleep as wait
 #print(spch.Microphone.list_microphone_names())
-
 os.system('cls' if os.name == 'nt' else 'clear') 
 resp = 's'
 #Função responsável por criar o arquivo de áudio e executá-lo
-def cria_audio (audio):
-    tts = gTTS(audio, lang='pt-br')
+def cria_audio (som):
+    tts = gTTS(som, lang='pt-br')
     #Salva o file de audio
-    tts.save('/home/robertdccaetano/Música/local/captura.mp3')
-    #Executa o file de audio
-    playsound.playsound('/home/robertdccaetano/Música/local/captura.mp3')
+    tts.save('captura.mp3')
+    #Executa o file de audio através do modulo pyGame
+    pygame.mixer.init()
+    pygame.mixer.music.load('captura.mp3')
+    pygame.mixer.music.play()
+    x = input('Digite algo para parar: ')
 
 while(resp == 's'):
     r = spch.Recognizer()
