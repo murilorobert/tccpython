@@ -1,10 +1,8 @@
 import os
 import speech_recognition as spch
 import pygame
-import sphinx
 from gtts import gTTS
 from time import sleep as wait
-import wave
 #print(spch.Microphone.list_microphone_names())
 os.system('cls' if os.name == 'nt' else 'clear') 
 resp = 's'
