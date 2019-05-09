@@ -4,7 +4,7 @@ import pygame
 from gtts import gTTS
 from time import sleep as wait
 #print(spch.Microphone.list_microphone_names())
-os.system('cls' if os.name == 'nt' else 'clear') 
+os.system('cls' if os.name == 'nt' else 'clear')
 resp = 's'
 
 #Função responsável por criar o arquivo de áudio e executá-lo
@@ -26,7 +26,7 @@ while(resp == 's'):
         print('\033[32mOlá, sou seu computador me diga alguma coisa para nós conversarmos... \033[m')
         audio = r.listen(mic)
     with open("microphone-result.wav", "wb") as f:
-        f.write(audio.get_wav_data())    
+        f.write(audio.get_wav_data())
         try:
             text = r.recognize_sphinx(audio)
             print('\033[32mCalma aí vou anotar o que você me falou, primeiro me informe onde quer salvar seu arquivo. \033[m')
@@ -35,7 +35,7 @@ while(resp == 's'):
                 nome_arquivo = input('\033[33mDigite o (nomeDoArquivo.txt) para salvá-lo: ')
                 arquivo = open(nome_arquivo,  'w')
                 arquivo.write(text)
-                print('\033[1;32mParece que você quis me dizer, {}?\033[m'.format(text))       
+                print('\033[1;32mParece que você quis me dizer, {}?\033[m'.format(text))
                 arquivo.close()
                 resp = 'n'
             except FileNotFoundError:
@@ -44,4 +44,4 @@ while(resp == 's'):
         except spch.UnknownValueError:
             print('\033[31mNão te entendi me desculpe... :/ ')
             resp = input('\033[1;31mQuer tentar novamente? [S/N]]' '\033[m')
-            os.system('cls' if os.name == 'nt' else 'clear')            
+            os.system('cls' if os.name == 'nt' else 'clear')

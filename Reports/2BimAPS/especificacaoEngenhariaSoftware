@@ -1,0 +1,8 @@
+	Para a primeira versão do nosso software faremos a parte que cuidará das funções de captação, transcrição e
+salvamento das informações de entrada e saída específicada. As funções de captação de áudio sera definida pela classe
+"capta_audio" que poderá obter o áudio, seja ele por um arquivo ou entrada de voz pelo microfone suas respectivas funções
+são "def entrada_mic" e "def entrada_file".
+	Já na transcrição entrará o módulo da API "SpeechRecognition" reponsável de nos fornecer as funções de transformação
+do áudio em texto. A função a ser utilizada sera "Recognizer".
+	    
+	

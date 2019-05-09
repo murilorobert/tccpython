@@ -1,0 +1,13 @@
+	Através de uma discussão entre os autores deste projeto chegamos ao consenso que construiríamos 
+uma ferramenta capaz de solucionar e auxiliar no cotidiano de quem lida constantemente
+com o uso de informações auditivas e tem a necessidade de torná-las mais legíveis e consequentemente
+facilitando a sua obtenção à análise. O seu funcionamento consiste na obtenção de informações sonoras
+e trancrevê-las em formato de texto. 
+	Partindo deste princípio foi necessário idealizar como seria o seu funcionamento e quais seria os
+recursos utilizados em seu desenvolvimento,  desde a linguagem a ser escolhida e as API's a serem utilizadas.
+Após uma pesquisa de linguagens que nos propiciaria um melhor tratamento de informações brutas, concluímos 
+que a linguagem de programação Python seria uma boa escolha, dentre as outras presentes no meio de desenvolvimento
+de software.
+	Com estudo mais aprofundados sobre os módulos da linguagem Python encontramos uma API que se encaixava
+perfeitamente nos paraâmetros necessários para o desenvolvimento da ferramenta, chamada "SpeechRecognition". Ela
+nos proporciona uma variedade de recursos para transcrição de áudio em texto.
