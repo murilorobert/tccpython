@@ -4,5 +4,3 @@ salvamento das informações de entrada e saída específicada. As funções de 
 são "def entrada_mic" e "def entrada_file".
 	Já na transcrição entrará o módulo da API "SpeechRecognition" reponsável de nos fornecer as funções de transformação
 do áudio em texto. A função a ser utilizada sera "Recognizer".
-	    
-	
