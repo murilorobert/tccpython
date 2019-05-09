@@ -1,5 +1,0 @@
-ja que este trabalho possui uma parte pratica e uma teorica , ametodologia tambem se deivide.
-
-Primeiro faremos o estudo na area de converçao de texto em audio,pra dsecobrir quais ferramentas  bbliotecas sao utilizadas 
-para essa converção.
-No desenvolvimento irremos utilizar o PyCharm e a linguagem Python.
