@@ -16,13 +16,17 @@ def entrada_microfone():
         file.write(audio.get_wav_data())
         wait(1)
         print('\033[3;32mSalvo com sucesso!')
+        trans_file(name_filewav)
 
-    path = name_filewav
+
+def trans_file(path):
+    r = spch.Recognizer()
     with spch.AudioFile(path) as source:
         try:
-            arquivo = reconhecedor.record(source)
-            transcrito = reconhecedor.recognize_sphinx(arquivo)
+            arquivo = r.record(source)
+            transcrito = r.recognize_sphinx(arquivo)
             print('\033[3;32mTranscrevendo...\033[m')
+            wait(1)
             print('\033[1m({})'.format(transcrito))
             #print(reconhecedor.recognize_google(arquivo, language="pt-br"))
         except spch.UnknownValueError:
