@@ -11,11 +11,11 @@ def opcoes_ferramenta():
     print('''Funções da ferramenta:
     [ 0 ] - Entrada por microfone
     [ 1 ] - Entrada por arquivo ''')
-    opcao = int(input('Opção: '))
-    if opcao == 0:
+    opcao = str(input('Opção: '))
+    if opcao == '0':
         capta_audio.entrada_microfone()
-    elif opcao == 1:
-        print('Opção por arquivo')
+    elif opcao == '1':
+        capta_audio.entrada_file()
     else:
         print('Opção invalida')
 

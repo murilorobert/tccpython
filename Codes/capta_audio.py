@@ -16,18 +16,28 @@ def entrada_microfone():
         file.write(audio.get_wav_data())
         wait(1)
         print('\033[3;32mSalvo com sucesso!')
-        trans_file(name_filewav)
+        transc_file(name_filewav)
 
 
-def trans_file(path):
-    r = spch.Recognizer()
+def transc_file(path):
+    reconhecedor = spch.Recognizer()
     with spch.AudioFile(path) as source:
         try:
-            arquivo = r.record(source)
-            transcrito = r.recognize_sphinx(arquivo)
+            arquivo = reconhecedor.record(source)
+            transcrito = reconhecedor.recognize_sphinx(arquivo)
             print('\033[3;32mTranscrevendo...\033[m')
             wait(1)
             print('\033[1m({})'.format(transcrito))
-            #print(reconhecedor.recognize_google(arquivo, language="pt-br"))
+            #print(reconhecedo.recognize_google(arquivo, language="pt-br"))
         except spch.UnknownValueError:
             print('\033[3;31mNão consegui entender a voz do arquivo!\033[m')
+
+def entrada_file():
+    repetir = 's'
+    while repetir == 's' or repetir == 'S':
+        try:
+            caminho_file = str(input('\033[33mDigite o caminho ou nome do arquivo: ') + '.wav')
+            transc_file(caminho_file)
+        except FileNotFoundError:
+            print('\033[3;31mArquivo ou caminho incorreto!')
+            repetir = str(input('\033[0;33mQuer tentar novamente? [s/n] '))
