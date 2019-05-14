@@ -1,0 +1,59 @@
+def captando(som):
+
+    chunk = 24
+    formato = pyaudio.paInt16
+    canais = 1
+    taxaDeAmostragem =  44100
+    tempoDeGravação = 5
+    nomeArquivoSaida = "saidaMic.wav"
+
+
+    deltaX = 1.0/taxaDeAmostragem
+
+    objetoPyAudio = pyaudio.PyAudio()
+
+    print('Gravando durante {}'.format(tempoDeGravação),'segundos...')
+
+    streamMic = objetoPyAudio.open(format=formato, channels= canais, rate=taxaDeAmostragem, input=True, frames_per_buffer = chunk)
+
+    framesWav = []
+
+    #captura dado do microfone
+    for nLoop in range(0, int(taxaDeAmostragem / chunk * tempoDeGravação)):
+        dadosLidosMic = streamMic.read(chunk)
+        framesWav.append(dadosLidosMic)
+    #framesWav é uma lista com 215 "chunks" de 1024 amostras
+
+    streamMic.stop_stream()
+    streamMic.close()
+    objetoPyAudio.terminate()
+
+    #criamos uma única lista com todos os objetos encadeados
+    framesWavJuntos = b''.join(framesWav)
+
+    #salvando arquive wav
+    arquivoWav = wave.open(nomeArquivoSaida, 'wb')
+    arquivoWav.setnchannels(canais)
+    arquivoWav.setsampwidth(objetoPyAudio.get_sample_size(formato))
+    arquivoWav.setframerate(taxaDeAmostragem)
+    arquivoWav.writeframes(framesWavJuntos)
+    arquivoWav.close()
+
+    sinalAudio =np.frombuffer(framesWavJuntos, np.int16)
+    print(len(sinalAudio))
+
+    tempo=np.linspace(0, len(sinalAudio)/taxaDeAmostragem,
+    num = len(sinalAudio))
+
+    plt.figure(1)
+    plt.title('Sinal Audio Gravado')
+    plt.plot(tempo,sinalAudio)
+    plt.show()
+
+    print('Fim da gravação')
+
+    return 0
+
+    if __name__ == '__main__':
+        import sys
+        sys.exit(main(sys.argv))
