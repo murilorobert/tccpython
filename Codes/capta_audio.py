@@ -25,19 +25,21 @@ def transc_file(path):
         try:
             arquivo = reconhecedor.record(source)
             transcrito = reconhecedor.recognize_sphinx(arquivo)
-            print('\033[3;32mTranscrevendo...\033[m')
+            print('\033[3;32mTranscrevendo...\033[0m')
             wait(1)
-            print('\033[1m({})'.format(transcrito))
+            print('\033[1mResultado >>> ({})\033[0m'.format(transcrito))
             #print(reconhecedo.recognize_google(arquivo, language="pt-br"))
         except spch.UnknownValueError:
             print('\033[3;31mNão consegui entender a voz do arquivo!\033[m')
+
 
 def entrada_file():
     repetir = 's'
     while repetir == 's' or repetir == 'S':
         try:
-            caminho_file = str(input('\033[33mDigite o caminho ou nome do arquivo: ') + '.wav')
+            caminho_file = str(input('\033[33mDigite o caminho ou nome do arquivo:\033[0m ') + '.wav')
             transc_file(caminho_file)
+            repetir = 'n'
         except FileNotFoundError:
-            print('\033[3;31mArquivo ou caminho incorreto!')
+            print('\033[3;31mArquivo ou caminho incorreto!\033[0m')
             repetir = str(input('\033[0;33mQuer tentar novamente? [s/n] '))
