@@ -11,7 +11,7 @@ def entrada_microfone():
     except spch.UnknownValueError:
         print('\033[3;31mVoz não detectada!\033[m')
 
-    name_filewav =  input('\033[33mSalvar como: ') + ".wav"
+    name_filewav =  input('\033[33mSalvar como:\033[0m ') + ".wav"
     with open(name_filewav, 'wb') as file:
         file.write(audio.get_wav_data())
         wait(1)
@@ -24,7 +24,7 @@ def transc_file(path):
     with spch.AudioFile(path) as source:
         try:
             arquivo = reconhecedor.record(source)
-            transcrito = reconhecedor.recognize_sphinx(arquivo)
+            transcrito = reconhecedor.recognize_google(arquivo, language="pt-br")
             print('\033[3;32mTranscrevendo...\033[0m')
             wait(1)
             print('\033[1mResultado >>> ({})\033[0m'.format(transcrito))
