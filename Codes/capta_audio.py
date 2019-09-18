@@ -29,6 +29,7 @@ def transc_file(path):
             wait(1)
             print('\033[1mResultado >>> ({})\033[0m'.format(transcrito))
             #print(reconhecedo.recognize_google(arquivo, language="pt-br"))
+            return transcrito
         except spch.UnknownValueError:
             print('\033[3;31mNão consegui entender a voz do arquivo!\033[m')
 

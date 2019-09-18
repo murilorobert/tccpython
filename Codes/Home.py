@@ -10,10 +10,13 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QInputDialog, QFileDialog
 from PyQt5.QtCore import pyqtSlot
+import capta_audio
+from Saida import *
 
 
 class Ui_AspideRecognizer(QWidget):
     def setupUi(self, AspideRecognizer):
+        self.asp = AspideRecognizer
         AspideRecognizer.setObjectName("AspideRecognizer")
         AspideRecognizer.resize(523, 351)
         self.label_2 = QtWidgets.QLabel(AspideRecognizer)
@@ -41,19 +44,29 @@ class Ui_AspideRecognizer(QWidget):
 
     @pyqtSlot()
     def on_click(self):
+
         options = QFileDialog.Options()
         options |= QFileDialog.DontUseNativeDialog
         fileName, _ = QFileDialog.getOpenFileName(None, "QFileDialog.getOpenFileName()", "",
                                                   "All Files (*);;Python Files (*.py)", options=options)
-        if fileName:
-            print(fileName)
-        
+        txt=capta_audio.transc_file(fileName)
+        self.openWindow(txt, fileName)
+
     def retranslateUi(self, AspideRecognizer):
         _translate = QtCore.QCoreApplication.translate
         AspideRecognizer.setWindowTitle(_translate("AspideRecognizer", "Aspide Recognizer"))
         self.label_2.setText(_translate("AspideRecognizer", "Aspide Recognizer"))
         self.pushButton_3.setText(_translate("AspideRecognizer", "Audio"))
         self.pushButton.setText(_translate("AspideRecognizer", "Arquivo"))
+
+    def openWindow(self, txt, path):
+
+        self.Form = QtWidgets.QWidget()
+        from Codes.Saida import Ui_Form
+        self.ui = Ui_Form()
+        self.ui.setupUi(self.Form, txt, path)
+        self.asp.hide()
+        self.Form.show()
 
 
 if __name__ == "__main__":
