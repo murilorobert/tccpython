@@ -53,7 +53,7 @@ class Ui_Form(QWidget):
 
     def retranslateUi(self, Form, txt):
         _translate = QtCore.QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", "Form"))
+        Form.setWindowTitle(_translate("Form", "Aspide Recognizer"))
         self.textBrowser.setText(_translate("Form", txt))
         self.pushButton.setText(_translate("Form", "PLAY AUDIO"))
         self.pushButton_2.setText(_translate("Form", "HOME"))

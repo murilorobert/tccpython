@@ -31,6 +31,7 @@ class Ui_AspideRecognizer(QWidget):
         self.pushButton_3 = QtWidgets.QPushButton(AspideRecognizer)
         self.pushButton_3.setGeometry(QtCore.QRect(350, 210, 75, 71))
         self.pushButton_3.setObjectName("pushButton_3")
+        self.pushButton_3.clicked.connect(self.on_click2)
         self.pushButton = QtWidgets.QPushButton(AspideRecognizer)
         self.pushButton.setEnabled(True)
         self.pushButton.setGeometry(QtCore.QRect(80, 210, 81, 71))
@@ -48,9 +49,14 @@ class Ui_AspideRecognizer(QWidget):
         options = QFileDialog.Options()
         options |= QFileDialog.DontUseNativeDialog
         fileName, _ = QFileDialog.getOpenFileName(None, "QFileDialog.getOpenFileName()", "",
-                                                  "All Files (*);;Python Files (*.py)", options=options)
+                                                  "Arquivo WAV(*.wav)", options=options)
         txt=capta_audio.transc_file(fileName)
         self.openWindow(txt, fileName)
+
+    @pyqtSlot()
+    def on_click2(self):
+        print("passei")
+        capta_audio.entrada_microfone()
 
     def retranslateUi(self, AspideRecognizer):
         _translate = QtCore.QCoreApplication.translate
