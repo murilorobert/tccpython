@@ -20,7 +20,7 @@ class Ui_AspideRecognizer(QWidget):
         AspideRecognizer.setObjectName("AspideRecognizer")
         AspideRecognizer.resize(523, 351)
         self.label_2 = QtWidgets.QLabel(AspideRecognizer)
-        self.label_2.setGeometry(QtCore.QRect(110, 30, 281, 81))
+        self.label_2.setGeometry(QtCore.QRect(110, 20, 281, 81))
         font = QtGui.QFont()
         font.setFamily("Courier New")
         font.setPointSize(20)
@@ -28,6 +28,15 @@ class Ui_AspideRecognizer(QWidget):
         font.setWeight(75)
         self.label_2.setFont(font)
         self.label_2.setObjectName("label_2")
+        self.label = QtWidgets.QLabel(AspideRecognizer)
+        self.label.setGeometry(QtCore.QRect(55, 40, 640, 200))
+        font = QtGui.QFont()
+        font.setFamily("Courier New")
+        font.setPointSize(13)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label.setFont(font)
+        self.label.setObjectName("label")
         #botão audio
         self.pushButton_3 = QtWidgets.QPushButton(AspideRecognizer)
         self.pushButton_3.setGeometry(QtCore.QRect(350, 240, 85, 50))
@@ -57,6 +66,7 @@ class Ui_AspideRecognizer(QWidget):
         options |= QFileDialog.DontUseNativeDialog
         fileName, _ = QFileDialog.getOpenFileName(None, "QFileDialog.getOpenFileName()", "",
                                                   "Arquivo WAV(*.wav)", options=options)
+
         txt=capta_audio.transc_file(fileName)
         self.openWindow(txt, fileName)
 
@@ -69,6 +79,7 @@ class Ui_AspideRecognizer(QWidget):
         _translate = QtCore.QCoreApplication.translate
         AspideRecognizer.setWindowTitle(_translate("AspideRecognizer", "Aspide Recognizer"))
         self.label_2.setText(_translate("AspideRecognizer", "Aspide Recognizer"))
+        self.label.setText(_translate("AspideRecognizer", "Ferramenta de trancrição de audio em texto!\n \n\n\nSelecione a forma de transcrição:"))
         self.pushButton_3.setText(_translate("AspideRecognizer", "Audio"))
         self.pushButton.setText(_translate("AspideRecognizer", "Arquivo"))
 
