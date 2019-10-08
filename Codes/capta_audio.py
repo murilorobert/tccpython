@@ -32,7 +32,7 @@ def transc_file(path):
             return transcrito
         except spch.UnknownValueError:
             print('\033[3;31mNão consegui entender a voz do arquivo!\033[m')
-
+            return 'Não consegui entender a voz do arquivo!'
 
 def entrada_file():
     repetir = 's'
