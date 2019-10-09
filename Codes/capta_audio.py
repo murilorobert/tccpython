@@ -1,5 +1,6 @@
 import speech_recognition as spch
 from time import sleep as wait
+from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QInputDialog, QFileDialog
 
 def entrada_microfone():
     reconhecedor = spch.Recognizer()
@@ -8,15 +9,21 @@ def entrada_microfone():
             reconhecedor.adjust_for_ambient_noise(micro)
             print('\033[3;31mGravando...\033[m')
             audio = reconhecedor.listen(micro)
+            print('\033[3;31mParei de Gravar\033[m')
     except spch.UnknownValueError:
         print('\033[3;31mVoz não detectada!\033[m')
 
-    name_filewav =  input('\033[33mSalvar como:\033[0m ') + ".wav"
-    with open(name_filewav, 'wb') as file:
+    fileName, _ = QFileDialog.getSaveFileName(None,
+                                            "Salvar audio", "",
+                                            "Wave File (*.wav);;All Files (*)");
+
+    print(fileName)
+    #name_filewav =  input('\033[33mSalvar como:\033[0m ') + ".wav"
+    with open(fileName, 'wb') as file:
         file.write(audio.get_wav_data())
         wait(1)
         print('\033[3;32mSalvo com sucesso!')
-        transc_file(name_filewav)
+        transc_file(fileName)
 
 
 def transc_file(path):

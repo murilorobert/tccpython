@@ -19,8 +19,12 @@ class Ui_AspideRecognizer(QWidget):
         self.asp = AspideRecognizer
         AspideRecognizer.setObjectName("AspideRecognizer")
         AspideRecognizer.resize(523, 351)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("aspideRecognizer.png"), QtGui.QIcon.Normal,
+                       QtGui.QIcon.Off)
+        AspideRecognizer.setWindowIcon(icon)
         self.label_2 = QtWidgets.QLabel(AspideRecognizer)
-        self.label_2.setGeometry(QtCore.QRect(110, 20, 281, 81))
+        self.label_2.setGeometry(QtCore.QRect(125, 20, 281, 81))
         font = QtGui.QFont()
         font.setFamily("Courier New")
         font.setPointSize(20)
@@ -68,6 +72,7 @@ class Ui_AspideRecognizer(QWidget):
                                                   "Arquivo WAV(*.wav)", options=options)
 
         txt=capta_audio.transc_file(fileName)
+        print(fileName)
         self.openWindow(txt, fileName)
 
     @pyqtSlot()

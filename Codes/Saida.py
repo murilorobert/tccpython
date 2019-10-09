@@ -41,7 +41,6 @@ class Ui_Form(QWidget):
 
     @pyqtSlot()
     def on_click2(self):
-        print("passei")
         self.chamaHome()
 
     def playAudio(self, path):
@@ -65,7 +64,6 @@ class Ui_Form(QWidget):
         self.ui.setupUi(self.AspideRecognizer)
         self.form.close()
         self.AspideRecognizer.show()
-        print("To aqui")
 
 
 if __name__ == "__main__":
