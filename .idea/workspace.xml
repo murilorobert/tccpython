@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17e0b9d7-d3ac-4d08-91c5-bc885594c04d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Codes/aspideRecognizer.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Codes/Home.py" beforeDir="false" afterPath="$PROJECT_DIR$/Codes/Home.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Codes/Saida.py" beforeDir="false" afterPath="$PROJECT_DIR$/Codes/Saida.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codes/capta_audio.py" beforeDir="false" afterPath="$PROJECT_DIR$/Codes/capta_audio.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codes/aspideRecognizer.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +17,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Codes/teste_stackoverflow.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state>
               <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
@@ -36,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Codes/capta_audio.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+            <state relative-caret-position="646">
+              <caret line="38" column="29" lean-forward="true" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -45,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Codes/Saida.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+            <state relative-caret-position="279">
+              <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
               <folding>
                 <element signature="e#195#237#0" expanded="true" />
               </folding>
@@ -69,8 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Codes/Home.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1362">
-              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+            <state relative-caret-position="142">
+              <caret line="22" column="73" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
               <folding>
                 <element signature="e#198#240#0" expanded="true" />
               </folding>
@@ -87,7 +85,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/speech_recognition/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="279">
@@ -118,10 +116,10 @@
         <option value="$PROJECT_DIR$/Codes/homeUI.py" />
         <option value="$USER_HOME$/Desktop/UiTCC/novo.py" />
         <option value="$USER_HOME$/Desktop/UiTCC/Home.py" />
-        <option value="$PROJECT_DIR$/Codes/Saida.py" />
         <option value="$USER_HOME$/Desktop/Home.py" />
-        <option value="$PROJECT_DIR$/Codes/Home.py" />
         <option value="$PROJECT_DIR$/Codes/capta_audio.py" />
+        <option value="$PROJECT_DIR$/Codes/Home.py" />
+        <option value="$PROJECT_DIR$/Codes/Saida.py" />
       </list>
     </option>
   </component>
@@ -138,7 +136,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -155,6 +152,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -422,7 +420,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Codes/teste_stackoverflow.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state>
           <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
@@ -432,16 +430,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Codes/main.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Codes/Saida.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
-          <folding>
-            <element signature="e#195#237#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Codes/Teste.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -457,30 +445,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Codes/Home.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/speech_recognition/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1362">
-          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
-          <folding>
-            <element signature="e#198#240#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="279">
+          <caret line="843" selection-start-line="843" selection-end-line="843" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Codes/capta_audio.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+        <state relative-caret-position="646">
+          <caret line="38" column="29" lean-forward="true" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/speech_recognition/__init__.py">
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-1178244844/PyQt5/QtGui/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Codes/Home.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="22" column="73" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
+          <folding>
+            <element signature="e#198#240#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Codes/Saida.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
-          <caret line="843" selection-start-line="843" selection-end-line="843" />
+          <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+          <folding>
+            <element signature="e#195#237#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

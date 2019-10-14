@@ -20,7 +20,7 @@ class Ui_AspideRecognizer(QWidget):
         AspideRecognizer.setObjectName("AspideRecognizer")
         AspideRecognizer.resize(523, 351)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("aspideRecognizer.png"), QtGui.QIcon.Normal,
+        icon.addPixmap(QtGui.QPixmap("favicon64.png"), QtGui.QIcon.Normal,
                        QtGui.QIcon.Off)
         AspideRecognizer.setWindowIcon(icon)
         self.label_2 = QtWidgets.QLabel(AspideRecognizer)
