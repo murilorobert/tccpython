@@ -21,10 +21,6 @@ class Ui_Form(QWidget):
         self.form=Form
         Form.setObjectName("Form")
         Form.resize(640, 443)
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("favicon64.png"), QtGui.QIcon.Normal,
-                       QtGui.QIcon.Off)
-        Form.setWindowIcon(icon)
         self.textBrowser = QtWidgets.QTextBrowser(Form)
         self.textBrowser.setGeometry(QtCore.QRect(30, 40, 571, 311))
         self.textBrowser.setObjectName("textBrowser")
