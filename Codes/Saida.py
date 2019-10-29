@@ -25,13 +25,23 @@ class Ui_Form(QWidget):
         self.textBrowser.setGeometry(QtCore.QRect(30, 40, 571, 311))
         self.textBrowser.setObjectName("textBrowser")
         self.pushButton = QtWidgets.QPushButton(Form)
-        self.pushButton.setGeometry(QtCore.QRect(50, 410, 75, 23))
+        self.pushButton.setGeometry(QtCore.QRect(50, 410, 100, 23))
         self.pushButton.setObjectName("pushButton")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("play-button.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton.setIcon(icon)
         self.pushButton.clicked.connect(self.on_click)
         self.pushButton_2 = QtWidgets.QPushButton(Form)
         self.pushButton_2.setGeometry(QtCore.QRect(490, 410, 75, 23))
         self.pushButton_2.setObjectName("pushButton_2")
         self.pushButton_2.clicked.connect(self.on_click2)
+        self.pushButton_3 = QtWidgets.QPushButton(Form)
+        self.pushButton_3.setGeometry(QtCore.QRect(270, 410, 75, 23))
+        self.pushButton_3.setObjectName("pushButton_3")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("save.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_3.setIcon(icon)
+        self.pushButton_3.clicked.connect(self.on_click3)
         self.retranslateUi(Form, txt)
         QtCore.QMetaObject.connectSlotsByName(Form)
 
@@ -42,6 +52,10 @@ class Ui_Form(QWidget):
     @pyqtSlot()
     def on_click2(self):
         self.chamaHome()
+
+    @pyqtSlot()
+    def on_click3(self):
+         self.chamaHome()
 
     def playAudio(self, path):
         pygame.mixer.init()
@@ -55,7 +69,8 @@ class Ui_Form(QWidget):
         Form.setWindowTitle(_translate("Form", "Aspide Recognizer"))
         self.textBrowser.setText(_translate("Form", txt))
         self.pushButton.setText(_translate("Form", "PLAY AUDIO"))
-        self.pushButton_2.setText(_translate("Form", "HOME"))
+        self.pushButton_2.setText(_translate("Form", "INICIO"))
+        self.pushButton_3.setText(_translate("Form", "SALVAR"))
 
     def chamaHome(self):
 

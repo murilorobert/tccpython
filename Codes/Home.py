@@ -62,14 +62,18 @@ class Ui_AspideRecognizer(QWidget):
     @pyqtSlot()
     def on_click(self):
 
-        options = QFileDialog.Options()
-        options |= QFileDialog.DontUseNativeDialog
-        fileName, _ = QFileDialog.getOpenFileName(None, "QFileDialog.getOpenFileName()", "",
-                                                  "Arquivo WAV(*.wav)", options=options)
-
-        txt=capta_audio.transc_file(fileName)
-        print(fileName)
-        self.openWindow(txt, fileName)
+        try:
+            options = QFileDialog.Options()
+            options |= QFileDialog.DontUseNativeDialog
+            fileName, _ = QFileDialog.getOpenFileName(None, "QFileDialog.getOpenFileName()", "",
+                                                      "Arquivo WAV(*.wav)", options=options)
+            if fileName:
+                self.telaApoio("Transcrevendo")
+                txt=capta_audio.transc_file(fileName)
+                print(fileName)
+                self.openWindow(txt, fileName)
+        except ValueError:
+            print("Erro");
 
     @pyqtSlot()
     def on_click2(self):
@@ -93,6 +97,13 @@ class Ui_AspideRecognizer(QWidget):
         self.asp.hide()
         self.Form.show()
 
+    def telaApoio(self, txt):
+        self.Form = QtWidgets.QWidget()
+        from Codes.TelaApoio import Ui_TelaApoio
+        self.ui = Ui_TelaApoio()
+        self.ui.setupUi(self.Form, txt)
+        self.Form.show()
+        self.asp.hide()
 
 if __name__ == "__main__":
     import sys

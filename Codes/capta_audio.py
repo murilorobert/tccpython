@@ -19,14 +19,16 @@ def entrada_microfone():
 
     print(fileName)
     #name_filewav =  input('\033[33mSalvar como:\033[0m ') + ".wav"
-    with open(fileName, 'wb') as file:
-        file.write(audio.get_wav_data())
-        wait(1)
-        print('\033[3;32mSalvo com sucesso!')
-        transc_file(fileName)
+    if fileName:
+        with open(fileName, 'wb') as file:
+            file.write(audio.get_wav_data())
+            wait(1)
+            print('\033[3;32mSalvo com sucesso!')
+            transc_file(fileName)
 
 
 def transc_file(path):
+
     reconhecedor = spch.Recognizer()
     with spch.AudioFile(path) as source:
         try:
