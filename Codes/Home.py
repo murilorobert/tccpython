@@ -68,7 +68,7 @@ class Ui_AspideRecognizer(QWidget):
             fileName, _ = QFileDialog.getOpenFileName(None, "QFileDialog.getOpenFileName()", "",
                                                       "Arquivo WAV(*.wav)", options=options)
             if fileName:
-                self.telaApoio("Transcrevendo")
+
                 txt=capta_audio.transc_file(fileName)
                 print(fileName)
                 self.openWindow(txt, fileName)
