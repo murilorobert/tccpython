@@ -12,6 +12,7 @@ from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QInputDialog, QF
 from PyQt5.QtCore import pyqtSlot
 import pygame
 from Home import *
+from time import sleep as wait
 
 
 class Ui_Form(QWidget):
@@ -20,23 +21,23 @@ class Ui_Form(QWidget):
         self.file = path
         self.form=Form
         Form.setObjectName("Form")
-        Form.resize(300, 200)
+        Form.resize(640, 443)
         self.textBrowser = QtWidgets.QTextBrowser(Form)
-        self.textBrowser.setGeometry(QtCore.QRect(30, 40, 245, 100))
+        self.textBrowser.setGeometry(QtCore.QRect(30, 40, 571, 311))
         self.textBrowser.setObjectName("textBrowser")
         self.pushButton = QtWidgets.QPushButton(Form)
-        self.pushButton.setGeometry(QtCore.QRect(25, 160, 100, 23))
+        self.pushButton.setGeometry(QtCore.QRect(50, 410, 100, 23))
         self.pushButton.setObjectName("pushButton")
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap("play-button.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton.setIcon(icon)
         self.pushButton.clicked.connect(self.on_click)
         self.pushButton_2 = QtWidgets.QPushButton(Form)
-        self.pushButton_2.setGeometry(QtCore.QRect(135, 160, 75, 23))
+        self.pushButton_2.setGeometry(QtCore.QRect(270, 410, 75, 23))
         self.pushButton_2.setObjectName("pushButton_2")
         self.pushButton_2.clicked.connect(self.on_click2)
         self.pushButton_3 = QtWidgets.QPushButton(Form)
-        self.pushButton_3.setGeometry(QtCore.QRect(220, 160, 75, 23))
+        self.pushButton_3.setGeometry(QtCore.QRect(490, 410, 75, 23))
         self.pushButton_3.setObjectName("pushButton_3")
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap("save.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)

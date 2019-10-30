@@ -1,6 +1,8 @@
 import speech_recognition as spch
 from time import sleep as wait
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QInputDialog, QFileDialog
+from PyQt5.QtWidgets import QDialog, QApplication, QMainWindow, QMessageBox
+from PyQt5 import QtCore, QtGui, QtWidgets
 
 def entrada_microfone():
     reconhecedor = spch.Recognizer()
@@ -10,6 +12,11 @@ def entrada_microfone():
             print('\033[3;31mGravando...\033[m')
             audio = reconhecedor.listen(micro)
             print('\033[3;31mParei de Gravar\033[m')
+            msg = QMessageBox(None)
+            msg.setWindowTitle("Aspide Recognizer")
+            msg.setIcon(QMessageBox.Information)
+            msg.setText("Gravado com Sucesso!!")
+            msg.exec_()
     except spch.UnknownValueError:
         print('\033[3;31mVoz não detectada!\033[m')
 
@@ -24,20 +31,26 @@ def entrada_microfone():
             file.write(audio.get_wav_data())
             wait(1)
             print('\033[3;32mSalvo com sucesso!')
-            transc_file(fileName)
+
+    return fileName;
 
 
 def transc_file(path):
-
     reconhecedor = spch.Recognizer()
     with spch.AudioFile(path) as source:
         try:
+
             arquivo = reconhecedor.record(source)
             transcrito = reconhecedor.recognize_google(arquivo, language="pt-br")
             print('\033[3;32mTranscrevendo...\033[0m')
             wait(1)
             print('\033[1mResultado >>> ({})\033[0m'.format(transcrito))
             #print(reconhecedo.recognize_google(arquivo, language="pt-br"))
+            msg = QMessageBox(None)
+            msg.setWindowTitle("Aspide Recognizer")
+            msg.setIcon(QMessageBox.Information)
+            msg.setText("Transcrito com Sucesso!!")
+            msg.exec_()
             return transcrito
         except spch.UnknownValueError:
             print('\033[3;31mNão consegui entender a voz do arquivo!\033[m')

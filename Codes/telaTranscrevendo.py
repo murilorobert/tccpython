@@ -10,6 +10,8 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QWidget
 
+from Codes import capta_audio
+
 
 class Ui_TelaTranscrevendo(QWidget):
     def setupUi(self, TelaTranscrevendo):
@@ -32,6 +34,12 @@ class Ui_TelaTranscrevendo(QWidget):
         _translate = QtCore.QCoreApplication.translate
         TelaTranscrevendo.setWindowTitle(_translate("TelaTranscrevendo", "Aspide Recognizer"))
         self.label.setText(_translate("TelaTranscrevendo", "Transcrevendo..."))
+
+    def trancrever(self, file):
+        txt = capta_audio.transc_file(file)
+        print("to Aqui")
+        self.openWindow(txt, file)
+        #self.TelaTranscrevendo.close()
 
 
 if __name__ == "__main__":

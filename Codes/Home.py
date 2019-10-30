@@ -11,6 +11,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QInputDialog, QFileDialog
 from PyQt5.QtCore import pyqtSlot
 from time import sleep as wait
+from tkinter import *
 import capta_audio
 from Saida import *
 
@@ -76,7 +77,9 @@ class Ui_AspideRecognizer(QWidget):
     @pyqtSlot()
     def on_click2(self):
         print("passei")
-        capta_audio.entrada_microfone()
+        fileName = capta_audio.entrada_microfone()
+        if fileName:
+            self.trancrever(fileName)
 
     def retranslateUi(self, AspideRecognizer):
         _translate = QtCore.QCoreApplication.translate
@@ -96,23 +99,35 @@ class Ui_AspideRecognizer(QWidget):
         self.Form.show()
 
     def telaApoio(self, fileName):
-        self.asp.hide()
-        self.TelaTranscrevendo = QtWidgets.QWidget()
-        from Codes.telaTranscrevendo import Ui_TelaTranscrevendo
-        self.ui = Ui_TelaTranscrevendo()
-        self.ui.setupUi(self.TelaTranscrevendo)
-        self.TelaTranscrevendo.clearFocus()
-        self.TelaTranscrevendo.show()
+        #class Application:
+        #    def __init__(self, master=None):
+        #        self.widget1 = Frame(master)
+        #        self.widget1.pack()
+        #        self.msg = Label(self.widget1, text="Primeiro Widget")
+        #        self.msg.pack()
+        #self.tela = Tk()
+        #Application(self.tela)
+        #self.tela.mainloop(0)
+
+        #self.asp.hide()
+        #self.TelaTranscrevendo = QtWidgets.QWidget()
+        #from Codes.telaTranscrevendo import Ui_TelaTranscrevendo
+        #self.ui = Ui_TelaTranscrevendo()
+        #self.ui.setupUi(self.TelaTranscrevendo)
+        #self.TelaTranscrevendo.clearFocus()
+        #self.TelaTranscrevendo.show()
         print(fileName)
         print("to Aqui")
         self.trancrever(fileName)
 
+
     def trancrever(self, file):
-        wait(10)
+        wait(2)
         txt = capta_audio.transc_file(file)
         print("to Aqui")
         self.openWindow(txt, file)
-        #self.TelaTranscrevendo.close()
+        # self.TelaTranscrevendo.close()
+        #self.tela.quit()
 
 
 if __name__ == "__main__":

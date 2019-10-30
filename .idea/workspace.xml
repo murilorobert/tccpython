@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17e0b9d7-d3ac-4d08-91c5-bc885594c04d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Codes/telaTranscrevendo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Codes/Home.py" beforeDir="false" afterPath="$PROJECT_DIR$/Codes/Home.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Codes/Saida.py" beforeDir="false" afterPath="$PROJECT_DIR$/Codes/Saida.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codes/TelaApoio.py" beforeDir="false" afterPath="$PROJECT_DIR$/Codes/TelaApoio.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codes/TesteDani.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Codes/TesteDani.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codes/capta_audio.py" beforeDir="false" afterPath="$PROJECT_DIR$/Codes/capta_audio.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codes/telaTranscrevendo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Codes/telaTranscrevendo.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +20,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Codes/teste_stackoverflow.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state>
               <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
@@ -36,8 +37,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Codes/capta_audio.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="30" />
+            <state relative-caret-position="483">
+              <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#33#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -54,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Codes/Saida.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="34" column="69" selection-start-line="34" selection-start-column="69" selection-end-line="34" selection-end-column="69" />
+            <state relative-caret-position="101">
+              <caret line="35" column="67" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
               <folding>
                 <element signature="e#195#237#0" expanded="true" />
               </folding>
@@ -66,8 +70,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Codes/Home.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="107" column="32" selection-start-line="107" selection-start-column="32" selection-end-line="107" selection-end-column="32" />
+            <state relative-caret-position="92">
+              <caret line="79" column="49" lean-forward="true" selection-start-line="79" selection-start-column="49" selection-end-line="79" selection-end-column="49" />
               <folding>
                 <element signature="e#198#240#0" expanded="true" />
               </folding>
@@ -78,8 +82,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Codes/telaTranscrevendo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-299">
-              <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="35" />
+            <state relative-caret-position="-95">
+              <caret line="34" column="74" lean-forward="true" selection-start-line="34" selection-start-column="74" selection-end-line="34" selection-end-column="91" />
+              <folding>
+                <element signature="e#206#248#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -125,16 +132,16 @@
         <option value="$USER_HOME$/Desktop/UiTCC/novo.py" />
         <option value="$USER_HOME$/Desktop/UiTCC/Home.py" />
         <option value="$USER_HOME$/Desktop/Home.py" />
-        <option value="$PROJECT_DIR$/Codes/Saida.py" />
         <option value="$PROJECT_DIR$/Codes/TelaApoio.py" />
         <option value="$PROJECT_DIR$/Codes/telaTranscrevendo.py" />
         <option value="$PROJECT_DIR$/Codes/capta_audio.py" />
+        <option value="$PROJECT_DIR$/Codes/Saida.py" />
         <option value="$PROJECT_DIR$/Codes/Home.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-7" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="745" />
   </component>
@@ -146,6 +153,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -162,7 +170,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -350,15 +357,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="676" y="0" width="697" height="745" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13541667" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.27617604" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32943144" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39632106" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.40237692" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39966556" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -470,9 +477,19 @@
         <state relative-caret-position="-418" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Codes/TelaApoio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-1178244844/sys.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Codes/teste_stackoverflow.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state>
           <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
@@ -504,44 +521,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Codes/TelaApoio.py">
+    <entry file="file://$PROJECT_DIR$/Codes/capta_audio.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        <state relative-caret-position="483">
+          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Codes/telaTranscrevendo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-95">
+          <caret line="34" column="74" lean-forward="true" selection-start-line="34" selection-start-column="74" selection-end-line="34" selection-end-column="91" />
+          <folding>
+            <element signature="e#206#248#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Codes/Saida.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="34" column="69" selection-start-line="34" selection-start-column="69" selection-end-line="34" selection-end-column="69" />
+        <state relative-caret-position="101">
+          <caret line="35" column="67" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
           <folding>
             <element signature="e#195#237#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-1178244844/sys.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Codes/telaTranscrevendo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-299">
-          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Codes/capta_audio.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Codes/Home.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="107" column="32" selection-start-line="107" selection-start-column="32" selection-end-line="107" selection-end-column="32" />
+        <state relative-caret-position="92">
+          <caret line="79" column="49" lean-forward="true" selection-start-line="79" selection-start-column="49" selection-end-line="79" selection-end-column="49" />
           <folding>
             <element signature="e#198#240#0" expanded="true" />
           </folding>
