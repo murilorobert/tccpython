@@ -8,7 +8,7 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QInputDialog, QFileDialog
+from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QInputDialog, QFileDialog, QMessageBox
 from PyQt5.QtCore import pyqtSlot
 import pygame
 from Home import *
@@ -18,6 +18,7 @@ from time import sleep as wait
 class Ui_Form(QWidget):
 
     def setupUi(self, Form, txt, path):
+        self.txt = txt
         self.file = path
         self.form=Form
         Form.setObjectName("Form")
@@ -56,7 +57,7 @@ class Ui_Form(QWidget):
 
     @pyqtSlot()
     def on_click3(self):
-         self.chamaHome()
+         self.salvaTxt()
 
     def playAudio(self, path):
         pygame.mixer.init()
@@ -80,6 +81,20 @@ class Ui_Form(QWidget):
         self.ui.setupUi(self.AspideRecognizer)
         self.form.close()
         self.AspideRecognizer.show()
+
+    def salvaTxt(self):
+        fileName, _ = QFileDialog.getSaveFileName(None,
+                                                  "Salvar Texto", "",
+                                                  "TXT File (*.txt);;All Files (*)");
+        if fileName:
+            arquivo = open(fileName, 'w')
+            arquivo.write(self.txt)
+            arquivo.close()
+            msg = QMessageBox(None)
+            msg.setWindowTitle("Aspide Recognizer")
+            msg.setIcon(QMessageBox.Information)
+            msg.setText("Salvo com Sucesso!!")
+            msg.exec_()
 
 
 if __name__ == "__main__":

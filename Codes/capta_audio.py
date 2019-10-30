@@ -8,6 +8,11 @@ def entrada_microfone():
     reconhecedor = spch.Recognizer()
     try:
         with spch.Microphone() as micro:
+            msg = QMessageBox(None)
+            msg.setWindowTitle("Aspide Recognizer")
+            msg.setIcon(QMessageBox.Information)
+            msg.setText("O audio é começara a gravar apos o ok!!")
+            msg.exec_()
             reconhecedor.adjust_for_ambient_noise(micro)
             print('\033[3;31mGravando...\033[m')
             audio = reconhecedor.listen(micro)
