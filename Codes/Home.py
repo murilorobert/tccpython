@@ -10,6 +10,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QInputDialog, QFileDialog
 from PyQt5.QtCore import pyqtSlot
+from time import sleep as wait
 import capta_audio
 from Saida import *
 
@@ -28,15 +29,15 @@ class Ui_AspideRecognizer(QWidget):
         font.setWeight(75)
         self.label_2.setFont(font)
         self.label_2.setObjectName("label_2")
-        self.label = QtWidgets.QLabel(AspideRecognizer)
-        self.label.setGeometry(QtCore.QRect(55, 40, 640, 200))
+        self.label1 = QtWidgets.QLabel(AspideRecognizer)
+        self.label1.setGeometry(QtCore.QRect(55, 40, 640, 200))
         font = QtGui.QFont()
         font.setFamily("Courier New")
         font.setPointSize(13)
         font.setBold(True)
         font.setWeight(75)
-        self.label.setFont(font)
-        self.label.setObjectName("label")
+        self.label1.setFont(font)
+        self.label1.setObjectName("label")
         #botão audio
         self.pushButton_3 = QtWidgets.QPushButton(AspideRecognizer)
         self.pushButton_3.setGeometry(QtCore.QRect(350, 240, 85, 50))
@@ -68,10 +69,7 @@ class Ui_AspideRecognizer(QWidget):
             fileName, _ = QFileDialog.getOpenFileName(None, "QFileDialog.getOpenFileName()", "",
                                                       "Arquivo WAV(*.wav)", options=options)
             if fileName:
-                self.telaApoio("Transcrevendo")
-                txt=capta_audio.transc_file(fileName)
-                print(fileName)
-                self.openWindow(txt, fileName)
+                self.telaApoio(fileName)
         except ValueError:
             print("Erro");
 
@@ -84,7 +82,7 @@ class Ui_AspideRecognizer(QWidget):
         _translate = QtCore.QCoreApplication.translate
         AspideRecognizer.setWindowTitle(_translate("AspideRecognizer", "Aspide Recognizer"))
         self.label_2.setText(_translate("AspideRecognizer", "Aspide Recognizer"))
-        self.label.setText(_translate("AspideRecognizer", "Ferramenta de trancrição de audio em texto!\n \n\n\nSelecione a forma de transcrição:"))
+        self.label1.setText(_translate("AspideRecognizer", "Ferramenta de trancrição de audio em texto!\n \n\n\nSelecione a forma de transcrição:"))
         self.pushButton_3.setText(_translate("AspideRecognizer", "Audio"))
         self.pushButton.setText(_translate("AspideRecognizer", "Arquivo"))
 
@@ -97,13 +95,25 @@ class Ui_AspideRecognizer(QWidget):
         self.asp.hide()
         self.Form.show()
 
-    def telaApoio(self, txt):
-        self.Form = QtWidgets.QWidget()
-        from Codes.TelaApoio import Ui_TelaApoio
-        self.ui = Ui_TelaApoio()
-        self.ui.setupUi(self.Form, txt)
-        self.Form.show()
+    def telaApoio(self, fileName):
         self.asp.hide()
+        self.TelaTranscrevendo = QtWidgets.QWidget()
+        from Codes.telaTranscrevendo import Ui_TelaTranscrevendo
+        self.ui = Ui_TelaTranscrevendo()
+        self.ui.setupUi(self.TelaTranscrevendo)
+        self.TelaTranscrevendo.clearFocus()
+        self.TelaTranscrevendo.show()
+        print(fileName)
+        print("to Aqui")
+        self.trancrever(fileName)
+
+    def trancrever(self, file):
+        wait(10)
+        txt = capta_audio.transc_file(file)
+        print("to Aqui")
+        self.openWindow(txt, file)
+        #self.TelaTranscrevendo.close()
+
 
 if __name__ == "__main__":
     import sys

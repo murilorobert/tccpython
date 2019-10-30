@@ -21,6 +21,7 @@ class Ui_TelaApoio():
         font.setPointSize(16)
         self.texto.setFont(font)
         self.texto.setObjectName("texto")
+        self.texto.setVisible(True)
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
 
