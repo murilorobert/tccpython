@@ -3,7 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="17e0b9d7-d3ac-4d08-91c5-bc885594c04d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codes/capta_audio.py" beforeDir="false" afterPath="$PROJECT_DIR$/Codes/capta_audio.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codes/Home.py" beforeDir="false" afterPath="$PROJECT_DIR$/Codes/Home.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codes/Murilo.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codes/Murilo22.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codes/MuriloTESTE.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codes/Novo.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codes/NovoTeste.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codes/NovoTeste.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codes/Teste22.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codes/Teste55.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codes/TesteDani.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codes/cmvçx.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codes/eefdfhgfjk.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codes/teste.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codes/testeMurilo.wav" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -214,7 +227,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

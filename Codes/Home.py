@@ -124,8 +124,9 @@ class Ui_AspideRecognizer(QWidget):
     def trancrever(self, file):
         wait(2)
         txt = capta_audio.transc_file(file)
-        print("to Aqui")
-        self.openWindow(txt, file)
+        if txt:
+            print("to Aqui")
+            self.openWindow(txt, file)
         # self.TelaTranscrevendo.close()
         #self.tela.quit()
 
